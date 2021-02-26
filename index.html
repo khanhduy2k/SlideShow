@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideShow</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .border_slide {
+            background-color: rgb(31, 31, 31);
+            position: relative;
+            width: 100%;
+            height: 250px;
+            padding: 10px 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+        .slideShow {
+            padding: 20px 0;
+            position: absolute;
+            left: 0;
+            top: 0;  
+            display: flex;   
+            transition: .4s;
+        }
+
+        .card_item {
+            width: 20vw;
+            display: inline-block;
+        }
+
+        .content {
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .img_card {
+            width: 100%;
+            overflow: hidden;
+            border-radius: .3rem;
+        }
+
+        .img_card > img {
+            width: 100%;
+            border-radius: .4rem;
+        }
+
+        .name_card {
+            color: #fff;
+            font-size: 1.3rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .btn {
+            opacity: .8;
+            z-index: 100;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #000;
+            padding: 30px 10px;
+        }
+
+        .btn:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        .prev {
+            position: absolute;
+            left: 10px;
+        }
+
+        .next {
+            position: absolute;
+            right: 10px;
+        }
+    </style>
+    <div class="border_slide">
+        <div class="btn prev">Prev</div>
+        <div class="btn next">Next</div>
+        <div class="slideShow">
+            <div class="card_item">
+                <div class="content">
+                    <div class="img_card">
+                        <img src="https://img.youtube.com/vi/neut5O8SAq4/0.jpg" alt="">
+                    </div>
+                    <div class="name_card">Phim 1</div>
+                </div>
+            </div>
+            <div class="card_item">
+                <div class="content">
+                    <div class="img_card">
+                        <img src="https://img.youtube.com/vi/rxfj3nSu-mM/0.jpg" alt="">
+                    </div>
+                    <div class="name_card">Phim 2</div>
+                </div>
+            </div>
+            <div class="card_item">
+                <div class="content">
+                    <div class="img_card">
+                        <img src="https://img.youtube.com/vi/aUWb_1fj8-A/0.jpg" alt="">
+                    </div>
+                    <div class="name_card">Phim 3</div>
+                </div>
+            </div>
+            <div class="card_item">
+                <div class="content">
+                    <div class="img_card">
+                        <img src="https://img.youtube.com/vi/XR6QPUw9n8c/0.jpg" alt="">
+                    </div>
+                    <div class="name_card">Phim 4</div>
+                </div>
+            </div>
+            <div class="card_item">
+                <div class="content">
+                    <div class="img_card">
+                        <img src="https://img.youtube.com/vi/kkSHU8zzgkU/0.jpg" alt="">
+                    </div>
+                    <div class="name_card">Phim 5</div>
+                </div>
+            </div>
+            <div class="card_item">
+                <div class="content">
+                    <div class="img_card">
+                        <img src="https://img.youtube.com/vi/RxeD6EOoyYs/0.jpg" alt="">
+                    </div>
+                    <div class="name_card">Phim 6</div>
+                </div>
+            </div>
+            <div class="card_item">
+                <div class="content">
+                    <div class="img_card">
+                        <img src="https://img.youtube.com/vi/vzHrjOMfHPY/0.jpg" alt="">
+                    </div>
+                    <div class="name_card">Phim 7</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="./slideshow.js"></script>
+</html>
